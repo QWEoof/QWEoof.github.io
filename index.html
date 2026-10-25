@@ -126,7 +126,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
 <body>
 <button class="lang" id="lang" type="button" aria-label="Switch language">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M3.4 7h17.2M2 12h20M3.4 17h17.2"/><ellipse class="m" cx="12" cy="12" rx="10" ry="10" style="animation-delay:0s"/><ellipse class="m" cx="12" cy="12" rx="10" ry="10" style="animation-delay:-1s"/><ellipse class="m" cx="12" cy="12" rx="10" ry="10" style="animation-delay:-2s"/></svg>
-  <span><span class="code on" data-l="en">EN</span> <span class="sep">/</span> <span class="code" data-l="ru">RU</span></span>
+  <span><span class="code on" data-l="en">EN</span> <span class="sep">/</span> <span class="code" data-l="uk">UA</span></span>
 </button>
 <main class="wrap">
 
@@ -214,11 +214,11 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
       cta:'Get in touch',cta2:'View experience',h_exp:'Experience',h_skills:'Tech stack',h_links:'Links',
       y1:'2023 – present, 3 years',t1:'Freelance web developer & designer',p1:'Three years of working directly with clients: I design mockups, build the front end, write the back end and take projects through to launch.',
       ok:'Confident with',learn:'Learning',d_design:'Design',d_tools:'Tools',c_resp:'Responsive design',c_proto:'Prototyping',c_type:'Typography',c_motion:'Motion design',c_tg:'Telegram bots',mail:'Email me',sw:'Switch language'},
-    ru:{title:'Влад Кисельов — инженер-программист и веб-дизайнер',desc:'Портфолио фриланс-разработчика и веб-дизайнера: опыт, технологии, контакты.',name:'Влад Кисельов',
-      role:'Инженер-программист и веб-дизайнер',lead:'Проектирую и разрабатываю сайты и веб-приложения: от макета в Figma до работающего кода. Беру проекты как фрилансер и довожу их до запуска.',
-      cta:'Написать мне',cta2:'Смотреть опыт',h_exp:'Опыт работы',h_skills:'Технологии',h_links:'Ссылки',
-      y1:'2023 — сейчас, 3 года',t1:'Фриланс: веб-разработчик и дизайнер',p1:'Три года работаю с заказчиками напрямую: рисую макеты, верстаю, пишу серверную часть и довожу проект до запуска.',
-      ok:'Работаю уверенно',learn:'Изучаю',d_design:'Дизайн',d_tools:'Инструменты',c_resp:'Адаптивный дизайн',c_proto:'Прототипы',c_type:'Типографика',c_motion:'Motion-дизайн',c_tg:'Telegram-боты',mail:'Написать на почту',sw:'Сменить язык'}
+    uk:{title:'Влад Кисельов — інженер-програміст і веб-дизайнер',desc:'Портфоліо фриланс-розробника та веб-дизайнера: досвід, технології, контакти.',name:'Влад Кисельов',
+      role:'Інженер-програміст і веб-дизайнер',lead:'Проєктую та розробляю сайти й вебзастосунки: від макета у Figma до робочого коду. Беру проєкти як фрилансер і доводжу їх до запуску.',
+      cta:'Написати мені',cta2:'Переглянути досвід',h_exp:'Досвід роботи',h_skills:'Технології',h_links:'Посилання',
+      y1:'2023 — зараз, 3 роки',t1:'Фриланс: веб-розробник і дизайнер',p1:'Три роки працюю із замовниками напряму: малюю макети, верстаю, пишу серверну частину й доводжу проєкт до запуску.',
+      ok:'Працюю впевнено',learn:'Вивчаю',d_design:'Дизайн',d_tools:'Інструменти',c_resp:'Адаптивний дизайн',c_proto:'Прототипи',c_type:'Типографіка',c_motion:'Motion-дизайн',c_tg:'Telegram-боти',mail:'Написати на пошту',sw:'Змінити мову'}
   };
   var h=document.getElementById('name'), btn=document.getElementById('lang');
   if(!h||!btn) return;
@@ -258,7 +258,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
   try{var sv=localStorage.getItem('lang'); if(sv&&T[sv]) lang=sv;}catch(e){}
   apply(lang);
   btn.addEventListener('click',function(){
-    lang=lang==='en'?'ru':'en';
+    lang=lang==='en'?'uk':'en';
     try{localStorage.setItem('lang',lang);}catch(e){}
     apply(lang);
   });
